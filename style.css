@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+:root{
+    --primary-color:white;
+    --box-color:rgb(242, 241, 241);
+    --secondary-color:black;
+
+    --dark-theme-bg:black;
+    --dark-theme-text:white;
+}
+
+nav {
+    margin-bottom: 20px;
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(155, 154, 154);
+}
+
+nav ul{
+    margin-left: 10%;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+.typing-content{
+    background-color: var(--box-color);
+    border: 2px solid rgb(149, 148, 148);
+    padding: 10px;
+    width: 80%;
+    height: fit-content;
+    border-radius: 15px;
+    margin: 30px auto;
+    font-size: 20px;   
+}
+
+.typing-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    height: 200px;
+    background-color: var(--box-color);
+    border: 2px solid rgb(149, 148, 148);
+    margin: auto;
+    border-radius: 10px;
+}
+
+.typing-area .text{
+    border-radius: 5px;
+    font-size: 25px;
+    height: 130px;
+    width: 85%;
+}
+
+.typing-area .words{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.typing-area .words select{
+    font-size: 20px;
+}
+
+.reset{
+    font-size: 20px;
+}
+.submit{
+    font-size: 20px;
+}
+
+.result{
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.table, th, td{
+    background-color: #fff;
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    font-size: 14px;
+    
+}

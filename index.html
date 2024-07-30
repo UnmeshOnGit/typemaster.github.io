@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TypeMaster-Check Your Typing Speed</title>
+    <script src="https://kit.fontawesome.com/9244c05649.js" crossorigin="anonymous"></script>
+</head>
+<body onload="startTyping()" >
+    <nav>
+        <div class="logo">
+            <h2>TypeMaster</h2>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>Account</li>
+            <li><i class="fa-solid fa-moon"></i></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="typing-content"></div>
+        <div class="typing-area">
+            <textarea name="" rows="10" class="text" id=""></textarea>
+            <div class="words">
+                <select name="" id="words-selection" onchange="getValue()">
+                    <option value="10">10 Words</option>
+                    <option value="20">20 Words</option>
+                    <option value="30">30 Words</option>
+                    <option value="40">40 Words</option>
+                    <option value="50">50 Words</option>
+                </select>
+                <input type="reset" onclick="reload()" class="reset">
+                <input type="submit" onclick="endTypingTest()" class="submit">
+            </div>
+            <div class="result"></div>
+        </div>
+        
+    </main>
+    <script src="script.js" ></script>
+</body>
+</html>
